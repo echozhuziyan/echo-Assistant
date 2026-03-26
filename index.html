@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成长知识库 — 和孩子一起成长</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon">🌱</span>
+        <span>成长知识库</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="history/index.html">世界历史</a></li>
+        <li><a href="english/index.html">英文启蒙</a></li>
+      </ul>
+      <button class="hamburger" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">🏠 首页</a></li>
+      <li><a href="history/index.html">📖 世界历史</a></li>
+      <li><a href="english/index.html">🔤 英文启蒙</a></li>
+    </ul>
+  </div>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>🌟 和孩子一起成长</h1>
+        <p>用碎片时间充实自己，为孩子打开更广阔的世界。<br>这里是你的个人学习知识库，随时随地，想学就学。</p>
+        <div style="margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="history/index.html" class="btn btn-ghost">📖 开始学历史</a>
+          <a href="english/index.html" class="btn btn-ghost">🔤 开始学英文</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module Cards -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">选择学习模块</h2>
+        <p style="text-align:center; color: var(--color-text-muted); margin-top: -16px; margin-bottom: 32px;">两大知识体系，助你成为孩子最好的老师</p>
+
+        <div class="card-grid card-grid-2">
+          <!-- History Module -->
+          <a href="history/index.html" class="card module-card history-card" style="text-decoration: none;">
+            <div class="card-body">
+              <span class="card-icon">📖</span>
+              <h3>世界历史</h3>
+              <p>从史前文明到现代世界，按时间阶段系统梳理。每个阶段都有成人详细版和儿童故事版，学完就能给孩子讲精彩的历史故事。</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;">
+                <span style="padding: 2px 10px; background: rgba(139,92,246,0.1); color: #8B5CF6; border-radius: 20px; font-size: 12px;">史前文明</span>
+                <span style="padding: 2px 10px; background: rgba(217,119,6,0.1); color: #D97706; border-radius: 20px; font-size: 12px;">古代文明</span>
+                <span style="padding: 2px 10px; background: rgba(220,38,38,0.1); color: #DC2626; border-radius: 20px; font-size: 12px;">中世纪</span>
+                <span style="padding: 2px 10px; background: rgba(5,150,105,0.1); color: #059669; border-radius: 20px; font-size: 12px;">近代</span>
+                <span style="padding: 2px 10px; background: rgba(37,99,235,0.1); color: #2563EB; border-radius: 20px; font-size: 12px;">现代</span>
+              </div>
+              <span class="btn btn-primary">开始学习 →</span>
+            </div>
+          </a>
+
+          <!-- English Module -->
+          <a href="english/index.html" class="card module-card english-card" style="text-decoration: none;">
+            <div class="card-body">
+              <span class="card-icon">🔤</span>
+              <h3>英文启蒙</h3>
+              <p>系统化的英文发音与阅读学习路径。从自然拼读和音标基础开始，到 RAZ 和牛津树分级阅读体系，建立完整的英文启蒙知识。</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;">
+                <span style="padding: 2px 10px; background: rgba(236,72,153,0.1); color: #EC4899; border-radius: 20px; font-size: 12px;">自然拼读</span>
+                <span style="padding: 2px 10px; background: rgba(139,92,246,0.1); color: #8B5CF6; border-radius: 20px; font-size: 12px;">国际音标</span>
+                <span style="padding: 2px 10px; background: rgba(16,185,129,0.1); color: #10B981; border-radius: 20px; font-size: 12px;">RAZ阅读</span>
+                <span style="padding: 2px 10px; background: rgba(245,158,11,0.1); color: #F59E0B; border-radius: 20px; font-size: 12px;">牛津树</span>
+              </div>
+              <span class="btn btn-primary">开始学习 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="section" style="background: var(--color-bg-white);">
+      <div class="container">
+        <h2 class="section-title">💡 如何使用</h2>
+        <div class="card-grid card-grid-3" style="margin-top: 24px;">
+          <div class="card" style="border: 1px solid rgba(0,0,0,0.04);">
+            <div class="card-body text-center">
+              <div style="font-size: 36px; margin-bottom: 12px;">📱</div>
+              <h4 style="font-weight: 700; margin-bottom: 8px;">随时随地</h4>
+              <p style="font-size: 14px; color: var(--color-text-muted); margin-bottom: 0;">地铁上、午休时，打开浏览器就能学习，充分利用碎片时间</p>
+            </div>
+          </div>
+          <div class="card" style="border: 1px solid rgba(0,0,0,0.04);">
+            <div class="card-body text-center">
+              <div style="font-size: 36px; margin-bottom: 12px;">🎯</div>
+              <h4 style="font-weight: 700; margin-bottom: 8px;">自由选择</h4>
+              <p style="font-size: 14px; color: var(--color-text-muted); margin-bottom: 0;">按兴趣和需要选择知识点，不必按顺序，想学哪里点哪里</p>
+            </div>
+          </div>
+          <div class="card" style="border: 1px solid rgba(0,0,0,0.04);">
+            <div class="card-body text-center">
+              <div style="font-size: 36px; margin-bottom: 12px;">👨‍👧</div>
+              <h4 style="font-weight: 700; margin-bottom: 8px;">学了就能教</h4>
+              <p style="font-size: 14px; color: var(--color-text-muted); margin-bottom: 0;">每个知识点都有成人版和儿童版，自己学完直接给孩子讲</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section">
+      <div class="container" style="max-width: 640px;">
+        <div class="highlight-box">
+          <h4>💬 温馨提示</h4>
+          <p>随时可以在微信上找我聊天提问！比如问我"帮我讲讲古埃及的故事"或者"phonics 的 sh 怎么发音"，我会直接给你解答。这个知识库是方便你自主浏览的，两种方式结合使用效果更好哦 😊</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>🌱 成长知识库 — 用 <span class="footer-heart">❤️</span> 为你和孩子准备</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
