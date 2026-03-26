@@ -5,9 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RAZ 分级阅读 — 英文启蒙 — 成长知识库</title>
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    .bk{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin:12px 0;transition:box-shadow .2s}
+    .bk:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+    .bk-title{font-weight:700;font-size:16px;color:#065F46;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+    .bk-tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600}
+    .tag-fiction{background:#DBEAFE;color:#1E40AF}
+    .tag-nonfic{background:#FEF3C7;color:#92400E}
+    .tag-poem{background:#F3E8FF;color:#6B21A8}
+    .bk-desc{color:#374151;font-size:14px;line-height:1.7;margin:8px 0}
+    .bk-text{background:#F0FDF4;border-radius:8px;padding:12px;margin:8px 0;font-size:14px;border-left:3px solid #10B981}
+    .bk-text .label{font-weight:700;color:#065F46;font-size:13px;margin-bottom:4px}
+    .bk-words{margin:8px 0}
+    .bk-words .label{font-weight:700;color:#374151;font-size:13px}
+    .wd{display:inline-block;background:#ECFDF5;border:1px solid #A7F3D0;border-radius:14px;padding:3px 10px;font-size:13px;margin:3px;font-weight:600;color:#065F46}
+    .bk-tip{background:#EFF6FF;border-radius:8px;padding:10px 12px;margin:8px 0;font-size:13px;color:#1E40AF;border-left:3px solid #3B82F6}
+    .lv-header{background:linear-gradient(135deg,#065F46,#10B981);color:#fff;border-radius:12px;padding:18px 20px;margin:24px 0 16px}
+    .lv-header h3{margin:0 0 4px;font-size:20px}
+    .lv-header p{margin:0;opacity:.9;font-size:14px}
+    .lv-info{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+    .lv-info-item{background:#F0FDF4;border-radius:8px;padding:10px 14px;flex:1;min-width:150px;text-align:center}
+    .lv-info-item .num{font-size:20px;font-weight:700;color:#065F46}
+    .lv-info-item .txt{font-size:12px;color:#6B7280;margin-top:2px}
+    .hw-grid{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+    .tb{background:#EFF6FF;border-radius:8px;padding:14px;margin:12px 0;border-left:4px solid #3B82F6}
+    .tb h5{margin:0 0 6px;color:#1E40AF}
+    .eb{background:#FEE2E2;border-radius:8px;padding:14px;margin:12px 0;border-left:4px solid #EF4444}
+    .eb h5{margin:0 0 6px;color:#991B1B}
+    .si{background:linear-gradient(135deg,#ECFDF5,#D1FAE5);border-radius:12px;padding:18px;margin:20px 0}
+  </style>
 </head>
 <body>
-
   <nav class="navbar">
     <div class="navbar-inner">
       <a href="../index.html" class="navbar-brand"><span class="brand-icon">🌱</span><span>成长知识库</span></a>
@@ -29,297 +57,340 @@
   </div>
 
   <main class="main-content">
-    <section class="page-header" style="background: linear-gradient(135deg, #065F46 0%, #10B981 50%, #6EE7B7 100%);">
+    <section class="page-header" style="background:linear-gradient(135deg,#065F46 0%,#10B981 50%,#6EE7B7 100%)">
       <div class="page-header-content">
         <h1>📚 RAZ 分级阅读</h1>
-        <p class="subtitle">Reading A-Z，全球最流行的英语分级阅读体系之一</p>
+        <p class="subtitle">每个 Level 的经典书目、内容注解和阅读指导</p>
       </div>
     </section>
 
     <div class="container">
       <div class="breadcrumb">
-        <a href="../index.html">首页</a>
-        <span class="separator">›</span>
-        <a href="index.html">英文启蒙</a>
-        <span class="separator">›</span>
+        <a href="../index.html">首页</a><span class="separator">›</span>
+        <a href="index.html">英文启蒙</a><span class="separator">›</span>
         <span class="current">RAZ 分级阅读</span>
       </div>
 
       <div class="content-block">
-        <h2>什么是 RAZ？</h2>
-        <p><strong>RAZ</strong>（Reading A-Z）是由美国 Learning A-Z 公司开发的英语分级阅读体系，被全球170多个国家的学校和家庭使用。它将英语阅读材料从易到难分为<strong>29个级别</strong>（aa → Z2），每个级别都有大量的绘本和阅读材料。</p>
-
-        <div class="highlight-box">
-          <h4>📌 为什么选 RAZ？</h4>
-          <p>RAZ 的优势在于：① 级别划分极其细致，孩子可以精确匹配自己的水平 ② 每个级别有数百本书，不会没东西读 ③ 配套有听力音频和小测验 ④ 内容涵盖科学、社会、文学等多种主题。对于4岁左右的英语启蒙，建议从 <strong>aa-C 级</strong>开始。</p>
+        <h2>关于 RAZ</h2>
+        <p>RAZ（Reading A-Z）是全球最流行的英语分级阅读体系之一，从 aa 到 Z2 共<strong>29个级别</strong>，2000多本书。下面按 Level 列出适合4岁孩子起步的<strong>经典书目</strong>，每本都有内容简介、核心句型和家长阅读指导。</p>
+        <div class="tb"><h5>💡 怎么用这个页面</h5>
+          <p>① 找到孩子当前级别 → ② 挑选感兴趣的书 → ③ 看内容简介和核心句型提前熟悉 → ④ 按阅读指导和孩子一起读</p>
         </div>
       </div>
 
-      <!-- Level Bar -->
+      <!-- ===== Level aa ===== -->
+      <div class="lv-header"><h3>🔴 Level aa — 零基础入门</h3><p>每页1个词或短语 · 大量图片 · 极高重复性</p></div>
+      <div class="lv-info">
+        <div class="lv-info-item"><div class="num">3-4岁</div><div class="txt">适合年龄</div></div>
+        <div class="lv-info-item"><div class="num">8-16页</div><div class="txt">每本页数</div></div>
+        <div class="lv-info-item"><div class="num">10-30词</div><div class="txt">每本词数</div></div>
+      </div>
       <div class="content-block">
-        <h2>RAZ 级别总览</h2>
-        <p>从 aa 到 Z2 共29个级别，颜色越暖表示越适合低龄入门。<strong>橙色高亮</strong>的是适合4岁左右孩子的级别。</p>
+        <h4>核心高频词</h4>
+        <div class="hw-grid"><span class="wd">I</span><span class="wd">a</span><span class="wd">the</span><span class="wd">is</span><span class="wd">see</span><span class="wd">like</span><span class="wd">my</span><span class="wd">can</span><span class="wd">go</span><span class="wd">to</span></div>
 
-        <div class="level-bar" style="margin: 20px 0;">
-          <div class="level-block highlight" style="background: #EF4444;" title="aa级 - 最入门">aa</div>
-          <div class="level-block highlight" style="background: #F97316;" title="A级">A</div>
-          <div class="level-block highlight" style="background: #F59E0B;" title="B级">B</div>
-          <div class="level-block highlight" style="background: #EAB308;" title="C级">C</div>
-          <div class="level-block highlight" style="background: #84CC16;" title="D级">D</div>
-          <div class="level-block highlight" style="background: #22C55E;" title="E级">E</div>
-          <div class="level-block highlight" style="background: #10B981;" title="F级">F</div>
-          <div class="level-block" style="background: #14B8A6;" title="G级">G</div>
-          <div class="level-block" style="background: #06B6D4;" title="H级">H</div>
-          <div class="level-block" style="background: #0EA5E9;" title="I级">I</div>
-          <div class="level-block" style="background: #3B82F6;" title="J级">J</div>
-          <div class="level-block" style="background: #6366F1;" title="K级">K</div>
-          <div class="level-block" style="background: #8B5CF6;" title="L级">L</div>
-          <div class="level-block" style="background: #A855F7;" title="M级">M</div>
-          <div class="level-block" style="background: #C084FC;" title="N级">N</div>
-          <div class="level-block" style="background: #D946EF;" title="O级">O</div>
-          <div class="level-block" style="background: #E879F9;" title="P级">P</div>
-          <div class="level-block" style="background: #EC4899;" title="Q级">Q</div>
-          <div class="level-block" style="background: #F43F5E;" title="R级">R</div>
-          <div class="level-block" style="background: #FB7185;" title="S级">S</div>
-          <div class="level-block" style="background: #FDA4AF;" title="T级">T</div>
-          <div class="level-block" style="background: #9CA3AF;" title="U级">U</div>
-          <div class="level-block" style="background: #9CA3AF;" title="V级">V</div>
-          <div class="level-block" style="background: #6B7280;" title="W级">W</div>
-          <div class="level-block" style="background: #6B7280;" title="X级">X</div>
-          <div class="level-block" style="background: #4B5563;" title="Y级">Y</div>
-          <div class="level-block" style="background: #4B5563;" title="Z级">Z</div>
-          <div class="level-block" style="background: #374151;" title="Z1级">Z1</div>
-          <div class="level-block" style="background: #1F2937;" title="Z2级">Z2</div>
+        <h4>经典书目详解</h4>
+
+        <div class="bk">
+          <div class="bk-title">📖 I See <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>每页一张大图配一个短句"I see a ___."，展示不同日常物品（ball, cat, dog, car等）。全书只有一个句型反复出现。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I see a ball. / I see a cat. / I see a dog.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">see</span><span class="wd">ball</span><span class="wd">cat</span><span class="wd">dog</span><span class="wd">car</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>指着图片问"What do you see?"让孩子用中文回答也行。重点是让孩子理解"I see"=我看到了。反复读几遍后鼓励孩子跟读"I see a ___"。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 I Like <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>孩子通过"I like ___."表达自己喜欢的东西——食物、玩具、动物等。每页一个事物配大图。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I like apples. / I like dogs. / I like my mom.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">like</span><span class="wd">apples</span><span class="wd">dogs</span><span class="wd">mom</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>读完后问孩子"What do YOU like?"引导孩子用"I like ___"表达。可以拓展到生活中：吃饭时"I like rice!"。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 My House <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>介绍房子的各个部分——门(door)、窗户(window)、屋顶(roof)等。每页展示房子的一个部位。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>This is my house. / I see a door. / I see a window.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">house</span><span class="wd">door</span><span class="wd">window</span><span class="wd">roof</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>读完后带孩子在家里走一圈，指着实物说"This is a door. This is a window."将书本和真实场景连接。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Park <span class="bk-tag tag-fiction">故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>孩子去公园玩，看到滑梯(slide)、秋千(swing)、沙坑(sandbox)等游乐设施。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I see a slide. / I can go on the slide. / I like the park.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">park</span><span class="wd">slide</span><span class="wd">swing</span><span class="wd">sandbox</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>下次去公园时复习这些词。在滑梯前说"This is a slide! Can you go on the slide?"</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Toys <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>展示各种玩具——球(ball)、娃娃(doll)、积木(blocks)、泰迪熊(teddy bear)等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I see a ball. / I like my doll. / This is my teddy bear.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>让孩子找出自己的玩具，一起用英语说名字。"Where is your ball? Here it is!"</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Colors <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>通过日常物品教颜色——红色的苹果、蓝色的天空、绿色的草地等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I see red. / The apple is red. / The sky is blue.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">red</span><span class="wd">blue</span><span class="wd">green</span><span class="wd">yellow</span><span class="wd">orange</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>日常生活中反复练习颜色。"What color is this? It's red!" 孩子很喜欢颜色认知游戏。</div>
         </div>
       </div>
 
-      <!-- Key Levels for 4-year-olds -->
+      <!-- ===== Level A ===== -->
+      <div class="lv-header" style="background:linear-gradient(135deg,#9A3412,#F97316)"><h3>🟠 Level A — 开始认词</h3><p>每页1-2句 · 句式高度重复只换关键词 · 图文强对应</p></div>
+      <div class="lv-info">
+        <div class="lv-info-item"><div class="num">3.5-4.5岁</div><div class="txt">适合年龄</div></div>
+        <div class="lv-info-item"><div class="num">8-16页</div><div class="txt">每本页数</div></div>
+        <div class="lv-info-item"><div class="num">20-50词</div><div class="txt">每本词数</div></div>
+      </div>
       <div class="content-block">
-        <h2>重点级别详解（适合4岁左右）</h2>
+        <h4>新增高频词</h4>
+        <div class="hw-grid"><span class="wd">he</span><span class="wd">she</span><span class="wd">we</span><span class="wd">they</span><span class="wd">has</span><span class="wd">have</span><span class="wd">are</span><span class="wd">this</span><span class="wd">that</span><span class="wd">here</span><span class="wd">look</span><span class="wd">at</span></div>
 
-        <div class="accordion" style="margin: 20px 0;">
+        <h4>经典书目详解</h4>
 
-          <!-- Level aa -->
-          <div class="accordion-item open">
-            <button class="accordion-header">
-              <span>🔴 Level aa — 零基础入门</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>3-4岁 / 零英语基础</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>每页只有1个词或简单短语</li>
-                  <li>大量图片支撑理解</li>
-                  <li>重复性极高的句式</li>
-                  <li>每本书约8-16页</li>
-                </ul>
-                <p><strong>核心高频词（Sight Words）：</strong></p>
-                <p style="font-size: 18px; letter-spacing: 2px;"><strong>I, a, the, is, am, can, see, like, my, go, to, it, in, on, up</strong></p>
-                <p><strong>典型句式：</strong></p>
-                <ul>
-                  <li>"I see a ___."（我看到一个___。）</li>
-                  <li>"I like ___."（我喜欢___。）</li>
-                  <li>"This is a ___."（这是一个___。）</li>
-                </ul>
-                <p><strong>阅读指导：</strong>这个级别主要是让孩子建立"书"的概念——知道从左到右、从上到下读，知道文字和图片的关系。家长指读，孩子看图听。</p>
-              </div>
-            </div>
-          </div>
+        <div class="bk">
+          <div class="bk-title">📖 I Can <span class="bk-tag tag-fiction">故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>小朋友展示自己能做的事情——跑步(run)、跳(jump)、唱歌(sing)、画画(draw)等。每页展示一个动作。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I can run. / I can jump. / I can sing. / I can draw.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">can</span><span class="wd">run</span><span class="wd">jump</span><span class="wd">sing</span><span class="wd">draw</span><span class="wd">swim</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>配合动作！读到"I can jump"时一起跳。孩子特别喜欢边做动作边学。然后问"Can you swim?"让孩子回答"I can swim!" 或 "I can't swim."</div>
+        </div>
 
-          <!-- Level A -->
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>🟠 Level A — 开始认词</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>3.5-4.5岁</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>每页1-2个简单句子</li>
-                  <li>句式高度重复，只换一两个词</li>
-                  <li>图文强对应</li>
-                </ul>
-                <p><strong>新增高频词：</strong></p>
-                <p style="font-size: 18px; letter-spacing: 2px;"><strong>he, she, we, they, has, have, are, this, that, here, look, at, and</strong></p>
-                <p><strong>典型句式：</strong></p>
-                <ul>
-                  <li>"I can ___."（我能___。）</li>
-                  <li>"Look at the ___."（看这个___。）</li>
-                  <li>"Here is a ___."（这里有一个___。）</li>
-                  <li>"The ___ is ___."（这个___是___的。）</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="bk">
+          <div class="bk-title">📖 Look at Me <span class="bk-tag tag-fiction">故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>孩子在做各种有趣的事情并说"Look at me!"——骑车、荡秋千、爬树等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>Look at me! / I can ride a bike. / Look at me go!</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>"Look at me!"是孩子很快就会主动用的表达。在生活中鼓励孩子做到事情时说这句话。</div>
+        </div>
 
-          <!-- Level B -->
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>🟡 Level B — 简单句子</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>4-5岁</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>每页2-3个句子</li>
-                  <li>句式开始有小变化</li>
-                  <li>开始出现简单情节</li>
-                </ul>
-                <p><strong>新增高频词：</strong></p>
-                <p style="font-size: 18px; letter-spacing: 2px;"><strong>big, little, said, play, do, not, no, yes, come, with, for, you, me, what, where</strong></p>
-                <p><strong>典型句式：</strong></p>
-                <ul>
-                  <li>"I like to ___."（我喜欢___。）</li>
-                  <li>"Do you like ___?"（你喜欢___吗？）</li>
-                  <li>"___ said, '___'"（___说，"___"）</li>
-                  <li>"The ___ can ___ and ___."（这个___能___和___。）</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="bk">
+          <div class="bk-title">📖 At the Zoo <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>参观动物园，认识各种动物——大象(elephant)、长颈鹿(giraffe)、狮子(lion)、猴子(monkey)等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I see a lion. / Look at the elephant. / The monkey is funny.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">zoo</span><span class="wd">lion</span><span class="wd">elephant</span><span class="wd">giraffe</span><span class="wd">monkey</span><span class="wd">bear</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>动物是4岁孩子最感兴趣的主题！配合动物叫声和动作模仿，让学习变得很好玩。</div>
+        </div>
 
-          <!-- Level C -->
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>🟢 Level C — 简短故事</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>4.5-5.5岁</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>每页2-4个句子</li>
-                  <li>有简单的故事线（开头-发展-结尾）</li>
-                  <li>开始需要从文字获取图片未展示的信息</li>
-                </ul>
-                <p><strong>新增高频词：</strong></p>
-                <p style="font-size: 18px; letter-spacing: 2px;"><strong>was, were, went, got, made, one, two, three, some, all, then, but, so, very, too</strong></p>
-                <p><strong>典型句式：</strong></p>
-                <ul>
-                  <li>"One day, ___ went to ___."（有一天，___去了___。）</li>
-                  <li>"___ wanted to ___."（___想要___。）</li>
-                  <li>"Then ___ said, '___'"（然后___说，"___"）</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="bk">
+          <div class="bk-title">📖 My Family <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>介绍家庭成员——爸爸(dad)、妈妈(mom)、哥哥/弟弟(brother)、姐姐/妹妹(sister)、爷爷奶奶等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>This is my mom. / This is my dad. / I love my family.</div>
+          <div class="bk-words"><span class="label">生词：</span><span class="wd">family</span><span class="wd">mom</span><span class="wd">dad</span><span class="wd">brother</span><span class="wd">sister</span><span class="wd">love</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>指着家庭照片练习。"Who is this? This is daddy!" 孩子很容易代入自己的家庭。</div>
+        </div>
 
-          <!-- Level D -->
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>🔵 Level D — 扩展词汇</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>5-6岁</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>每页3-5个句子</li>
-                  <li>故事情节更丰富</li>
-                  <li>开始出现对话</li>
-                  <li>词汇量明显增加</li>
-                </ul>
-                <p><strong>新增高频词：</strong></p>
-                <p style="font-size: 18px; letter-spacing: 2px;"><strong>after, before, because, when, if, could, would, should, many, much, more, other, about, into</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Level E -->
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>🟣 Level E — 初步独立阅读</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>5.5-6.5岁</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>句子变长，复合句出现</li>
-                  <li>开始有不同的文体（故事、说明文、诗歌）</li>
-                  <li>需要从上下文推断词义</li>
-                </ul>
-                <p><strong>核心能力：</strong>孩子开始能半独立地阅读简单故事书。</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Level F -->
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>🩷 Level F — 流利阅读起步</span>
-              <span class="accordion-icon">▼</span>
-            </button>
-            <div class="accordion-body">
-              <div class="accordion-content">
-                <p><strong>适合年龄：</strong>6-7岁</p>
-                <p><strong>阅读特点：</strong></p>
-                <ul>
-                  <li>段落概念出现</li>
-                  <li>故事结构更完整</li>
-                  <li>开始接触非虚构类文章</li>
-                  <li>阅读速度和流利度成为目标</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="bk">
+          <div class="bk-title">📖 Getting Dressed <span class="bk-tag tag-nonfic">生活</span></div>
+          <div class="bk-desc"><strong>内容：</strong>早上起床穿衣服的过程——衬衫(shirt)、裤子(pants)、袜子(socks)、鞋子(shoes)等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I put on my shirt. / I put on my pants. / I put on my shoes.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>每天早上穿衣服时就是天然的英语练习场景！"Let's put on your shirt. Put on your socks."</div>
         </div>
       </div>
 
-      <!-- Reading Tips -->
+      <!-- ===== Level B ===== -->
+      <div class="lv-header" style="background:linear-gradient(135deg,#854D0E,#EAB308)"><h3>🟡 Level B — 简单句子</h3><p>每页2-3句 · 句式开始有变化 · 简单情节出现</p></div>
+      <div class="lv-info">
+        <div class="lv-info-item"><div class="num">4-5岁</div><div class="txt">适合年龄</div></div>
+        <div class="lv-info-item"><div class="num">12-16页</div><div class="txt">每本页数</div></div>
+        <div class="lv-info-item"><div class="num">40-80词</div><div class="txt">每本词数</div></div>
+      </div>
+      <div class="content-block">
+        <h4>新增高频词</h4>
+        <div class="hw-grid"><span class="wd">big</span><span class="wd">little</span><span class="wd">said</span><span class="wd">play</span><span class="wd">do</span><span class="wd">not</span><span class="wd">no</span><span class="wd">yes</span><span class="wd">come</span><span class="wd">with</span><span class="wd">you</span><span class="wd">me</span><span class="wd">what</span><span class="wd">where</span></div>
+
+        <h4>经典书目详解</h4>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Big and the Little <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>通过对比展示大小概念——大狗和小狗、大球和小球、大树和小树等。开始引入形容词对比。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>The dog is big. / The cat is little. / I see a big tree and a little tree.</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">big</span><span class="wd">little</span><span class="wd">and</span><span class="wd">tree</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>生活中随时练习大小对比。"Look! A big car and a little car." 用实物让孩子理解形容词。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Do You Like? <span class="bk-tag tag-fiction">互动</span></div>
+          <div class="bk-desc"><strong>内容：</strong>一问一答的互动故事。"Do you like apples?" "Yes, I do!" "Do you like spiders?" "No, I do not!" 引入疑问句和回答。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>Do you like ___? / Yes, I do! / No, I do not.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>这本书非常适合互动！家长读问句，孩子回答。然后反过来让孩子问你。可以拓展到吃饭场景"Do you like carrots?"</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Playing <span class="bk-tag tag-fiction">故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>小朋友们一起玩各种游戏——捉迷藏(hide and seek)、踢球(kick the ball)、搭积木(build blocks)等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>Come and play with me! / We can play together. / I like to play.</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">play</span><span class="wd">together</span><span class="wd">come</span><span class="wd">with</span><span class="wd">fun</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>"Come and play with me!"是非常实用的日常表达，鼓励孩子在想找人玩时用这句话。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 What Is It? <span class="bk-tag tag-fiction">互动</span></div>
+          <div class="bk-desc"><strong>内容：</strong>猜谜游戏型绘本。先给出线索描述（"It is big. It has four legs. It says moo."），翻页揭晓答案（"It is a cow!"）。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>What is it? / It is big. / It has ___. / It is a ___!</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>读线索时停下来让孩子猜！"What do you think it is?" 培养推理能力。之后可以自己编类似的谜语考孩子。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 My Body <span class="bk-tag tag-nonfic">认知</span></div>
+          <div class="bk-desc"><strong>内容：</strong>认识身体部位——头(head)、手(hands)、脚(feet)、眼睛(eyes)、鼻子(nose)、嘴(mouth)等。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>I have two eyes. / I have two hands. / I have one nose.</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">head</span><span class="wd">eyes</span><span class="wd">nose</span><span class="wd">mouth</span><span class="wd">hands</span><span class="wd">feet</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>配合 "Head, Shoulders, Knees and Toes" 儿歌一起学！指着自己的身体部位说英文名。</div>
+        </div>
+      </div>
+
+      <!-- ===== Level C ===== -->
+      <div class="lv-header" style="background:linear-gradient(135deg,#166534,#22C55E)"><h3>🟢 Level C — 简短故事</h3><p>每页2-4句 · 有简单故事线 · 开始需要从文字获取信息</p></div>
+      <div class="lv-info">
+        <div class="lv-info-item"><div class="num">4.5-5.5岁</div><div class="txt">适合年龄</div></div>
+        <div class="lv-info-item"><div class="num">12-20页</div><div class="txt">每本页数</div></div>
+        <div class="lv-info-item"><div class="num">60-120词</div><div class="txt">每本词数</div></div>
+      </div>
+      <div class="content-block">
+        <h4>新增高频词</h4>
+        <div class="hw-grid"><span class="wd">was</span><span class="wd">were</span><span class="wd">went</span><span class="wd">got</span><span class="wd">made</span><span class="wd">one</span><span class="wd">two</span><span class="wd">three</span><span class="wd">some</span><span class="wd">all</span><span class="wd">then</span><span class="wd">but</span><span class="wd">so</span></div>
+
+        <h4>经典书目详解</h4>
+
+        <div class="bk">
+          <div class="bk-title">📖 A Day at School <span class="bk-tag tag-fiction">故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>完整描述上学的一天——到校、上课、吃午餐、户外活动、放学。有明确的时间顺序。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>First, I go to school. / Then, I read a book. / After that, I eat lunch. / Finally, I go home.</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">school</span><span class="wd">first</span><span class="wd">then</span><span class="wd">after</span><span class="wd">finally</span><span class="wd">lunch</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>学习 first/then/after/finally 这些时间顺序词。可以用同样方式描述孩子的一天。"First, you wake up. Then, you eat breakfast."</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Little Red Hen <span class="bk-tag tag-fiction">经典故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>经典寓言改编。小红母鸡想做面包，请其他动物帮忙，大家都说"Not I!"，最后面包做好了只有小红母鸡自己吃。教导"付出才有回报"。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>"Who will help me?" said the hen. / "Not I!" said the cat. / "Then I will do it myself."</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">help</span><span class="wd">will</span><span class="wd">myself</span><span class="wd">bread</span><span class="wd">plant</span><span class="wd">cut</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>这是非常经典的故事！重复句式"Who will help me?" "Not I!"让孩子参与角色扮演，每人演一个动物。讨论"为什么最后其他动物没有面包吃？"</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Seasons <span class="bk-tag tag-nonfic">科普</span></div>
+          <div class="bk-desc"><strong>内容：</strong>介绍四季变化——春天花开(flowers bloom)、夏天游泳(swim)、秋天树叶变色(leaves change)、冬天下雪(snow falls)。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>In spring, flowers bloom. / In summer, we swim. / In fall, leaves change colors.</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">spring</span><span class="wd">summer</span><span class="wd">fall</span><span class="wd">winter</span><span class="wd">flowers</span><span class="wd">leaves</span><span class="wd">snow</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>结合当前季节讨论。"What season is it now? It's spring! What do you see in spring?"</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Making a Sandwich <span class="bk-tag tag-nonfic">生活</span></div>
+          <div class="bk-desc"><strong>内容：</strong>按步骤教做三明治——拿面包、涂花生酱、加果酱、合上面包、切开。教 procedural text（步骤说明文）。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>First, get two pieces of bread. / Next, put peanut butter on the bread. / Then, add jelly.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>最好的方式是和孩子一起做！边做边用英文说步骤。孩子能吃到自己做的三明治，学习动力超强。</div>
+        </div>
+      </div>
+
+      <!-- ===== Level D ===== -->
+      <div class="lv-header" style="background:linear-gradient(135deg,#1E40AF,#3B82F6)"><h3>🔵 Level D — 扩展词汇</h3><p>每页3-5句 · 故事情节更丰富 · 对话出现 · 词汇量增加</p></div>
+      <div class="lv-info">
+        <div class="lv-info-item"><div class="num">5-6岁</div><div class="txt">适合年龄</div></div>
+        <div class="lv-info-item"><div class="num">16-20页</div><div class="txt">每本页数</div></div>
+        <div class="lv-info-item"><div class="num">80-180词</div><div class="txt">每本词数</div></div>
+      </div>
+      <div class="content-block">
+        <h4>新增高频词</h4>
+        <div class="hw-grid"><span class="wd">after</span><span class="wd">before</span><span class="wd">because</span><span class="wd">when</span><span class="wd">if</span><span class="wd">could</span><span class="wd">would</span><span class="wd">many</span><span class="wd">more</span><span class="wd">other</span><span class="wd">about</span><span class="wd">into</span></div>
+
+        <h4>经典书目详解</h4>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Three Little Pigs <span class="bk-tag tag-fiction">经典故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>三只小猪经典故事的 RAZ 改编版。三只小猪分别用稻草、木头和砖头建房子，大灰狼来吹。情节更完整，对话更多。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>"I will huff and I will puff and I will blow your house down!" / "Not by the hair on my chinny chin chin!" / The wolf could not blow down the brick house.</div>
+          <div class="bk-words"><span class="label">新词：</span><span class="wd">straw</span><span class="wd">sticks</span><span class="wd">bricks</span><span class="wd">blow</span><span class="wd">huff</span><span class="wd">puff</span><span class="wd">wolf</span></div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>经典到不能更经典！让孩子演大灰狼说"I'll huff and I'll puff!"。讨论"Which house is the strongest? Why?"培养思考能力。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 Baby Animals <span class="bk-tag tag-nonfic">科普</span></div>
+          <div class="bk-desc"><strong>内容：</strong>介绍动物宝宝的名称——小猫kitten、小狗puppy、小鸡chick、小牛calf、小马foal等。配有可爱的动物宝宝图片。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>A baby cat is called a kitten. / A baby dog is called a puppy. / Baby animals are cute!</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>"你知道小狗的英文不叫small dog而是puppy吗？"这种"冷知识"型内容4岁孩子很喜欢学，会觉得自己知道了别人不知道的东西。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Lion and the Mouse <span class="bk-tag tag-fiction">经典寓言</span></div>
+          <div class="bk-desc"><strong>内容：</strong>伊索寓言改编。小老鼠吵醒了狮子，狮子放了它。后来狮子被网困住，小老鼠咬断绳子救了狮子。寓意：弱小也能帮助强大。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>"Please let me go," said the mouse. / "I will help you one day." / The little mouse saved the big lion.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>讨论"小老鼠那么小，它是怎么帮助大狮子的？""就算你很小也可以帮助别人。"引导孩子理解寓意。</div>
+        </div>
+      </div>
+
+      <!-- ===== Level E-F ===== -->
+      <div class="lv-header" style="background:linear-gradient(135deg,#581C87,#A855F7)"><h3>🟣 Level E-F — 初步独立阅读</h3><p>复合句出现 · 多种文体 · 段落概念 · 走向独立阅读</p></div>
+      <div class="lv-info">
+        <div class="lv-info-item"><div class="num">5.5-7岁</div><div class="txt">适合年龄</div></div>
+        <div class="lv-info-item"><div class="num">16-24页</div><div class="txt">每本页数</div></div>
+        <div class="lv-info-item"><div class="num">150-300词</div><div class="txt">每本词数</div></div>
+      </div>
+      <div class="content-block">
+        <p>E-F级开始，句子更长、情节更复杂，孩子开始从"学习阅读"过渡到"通过阅读学习"。</p>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Water Cycle <span class="bk-tag tag-nonfic">科普</span></div>
+          <div class="bk-desc"><strong>内容：</strong>讲解水循环——蒸发(evaporation)、凝结(condensation)、降水(precipitation)。用简单语言解释科学概念。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>The sun heats the water. / Water goes up into the sky. / Clouds form when water cools. / Rain falls back down.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>烧水时给孩子看蒸汽就是"evaporation"！在镜子上哈气让水珠出现就是"condensation"。科学启蒙从生活开始。</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 A Trip to the Farm <span class="bk-tag tag-fiction">故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>一家人去农场参观的完整故事——喂鸡、骑马、摘苹果、挤牛奶。有对话、有情节发展。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>"Can I feed the chickens?" asked Tom. / "Of course!" said the farmer. / They had a wonderful day at the farm.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>有机会带孩子去农场体验会更好。读完后讨论"If you go to a farm, what would you like to do?"</div>
+        </div>
+
+        <div class="bk">
+          <div class="bk-title">📖 The Ugly Duckling <span class="bk-tag tag-fiction">经典故事</span></div>
+          <div class="bk-desc"><strong>内容：</strong>丑小鸭的故事。一只看起来不一样的小鸭子被嘲笑，最后变成了美丽的天鹅。寓意：每个人都有自己的美丽。</div>
+          <div class="bk-text"><div class="label">📝 核心句型</div>The duckling was different from the others. / "You are ugly!" they said. / But one day, he became a beautiful swan.</div>
+          <div class="bk-tip">👨‍👩‍👦 <strong>家长指导：</strong>讨论"为什么其他小鸭子说它丑？这样做对吗？""每个人都不一样，不一样是好的。"培养孩子的同理心。</div>
+        </div>
+      </div>
+
+      <!-- ===== 亲子阅读指南 ===== -->
       <div class="content-block">
         <h2>亲子阅读实操指南</h2>
 
-        <div class="highlight-box">
+        <div class="si">
           <h4>🎯 如何判断孩子在哪个级别？</h4>
-          <p>简单测试法：让孩子尝试读一本书，如果一页中有<strong>5个以上的生词</strong>就太难了，<strong>全都认识</strong>就太简单了。理想状态是每页有<strong>1-2个新词</strong>需要帮助。</p>
+          <p>让孩子试读一本书：每页<strong>5个以上生词</strong>=太难 → 降级 | <strong>全都认识</strong>=太简单 → 升级 | <strong>1-2个新词</strong>=刚好</p>
         </div>
 
         <h3>亲子阅读五步法</h3>
-        <ol>
-          <li><strong>看封面猜内容</strong>（Build curiosity）：先和孩子看封面插图，猜猜这本书讲什么</li>
-          <li><strong>家长先读一遍</strong>（Read aloud）：家长用手指指着文字，一个词一个词地读，让孩子听发音、看文字</li>
-          <li><strong>再读一遍，鼓励跟读</strong>（Echo reading）：家长读一句，孩子跟一句</li>
-          <li><strong>讨论内容</strong>（Comprehension）：问简单的问题——"你看到了什么？""小兔子去哪了？"</li>
-          <li><strong>鼓励独立读</strong>（Independent reading）：几次之后，让孩子自己试着读，家长只在需要时提供帮助</li>
-        </ol>
+        <div class="bk">
+          <div class="bk-desc">
+            <strong>① 看封面猜内容</strong> — 和孩子看封面，猜这本书讲什么<br>
+            <strong>② 家长先读一遍</strong> — 指着文字一个词一个词读，让孩子听发音看文字<br>
+            <strong>③ 再读鼓励跟读</strong> — 家长读一句孩子跟一句<br>
+            <strong>④ 讨论内容</strong> — 问简单问题"你看到了什么？""然后怎么了？"<br>
+            <strong>⑤ 鼓励独立读</strong> — 几次后让孩子自己试着读
+          </div>
+        </div>
 
-        <div class="highlight-box">
-          <h4>💡 重要提示</h4>
-          <p>① 每个级别至少读<strong>20-30本</strong>再升级 ② 不要急着升级，<strong>横向扩展</strong>比纵向爬级更重要 ③ 孩子不想读时不要强迫 ④ 多<strong>夸奖</strong>孩子的每一个进步！</p>
+        <div class="tb"><h5>💡 重要提示</h5>
+          <p>① 每个级别至少读<strong>20-30本</strong>再升级<br>② <strong>横向扩展</strong>比纵向爬级更重要<br>③ 孩子不想读时<strong>不要强迫</strong><br>④ 多<strong>夸奖</strong>每一个进步！</p>
         </div>
       </div>
 
       <!-- Navigation -->
       <div class="page-nav">
-        <div class="page-nav-item">
-          <a href="ipa.html" class="page-nav-link">
-            <div class="page-nav-label">← 上一章</div>
-            <div class="page-nav-title">国际音标</div>
-          </a>
-        </div>
-        <div class="page-nav-item next">
-          <a href="oxford-tree.html" class="page-nav-link">
-            <div class="page-nav-label">下一章 →</div>
-            <div class="page-nav-title">牛津树分级阅读</div>
-          </a>
-        </div>
+        <div class="page-nav-item"><a href="ipa.html" class="page-nav-link"><div class="page-nav-label">← 上一章</div><div class="page-nav-title">国际音标</div></a></div>
+        <div class="page-nav-item next"><a href="oxford-tree.html" class="page-nav-link"><div class="page-nav-label">下一章 →</div><div class="page-nav-title">牛津树分级阅读</div></a></div>
       </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <p>🌱 成长知识库 — 用 <span class="footer-heart">❤️</span> 为你和孩子准备</p>
-  </footer>
+  <footer class="footer"><p>🌱 成长知识库 — 用 <span class="footer-heart">❤️</span> 为你和孩子准备</p></footer>
   <button class="back-to-top" aria-label="返回顶部">↑</button>
   <script src="../scripts.js"></script>
 </body>
