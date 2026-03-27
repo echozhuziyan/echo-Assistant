@@ -815,6 +815,7 @@ img {
 .learning-path {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-md);
   padding: var(--space-lg) 0;
   overflow-x: auto;
@@ -1296,7 +1297,10 @@ img {
   }
 
   .learning-path {
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+    overflow-x: visible;
   }
 
   .page-nav {
